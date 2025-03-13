@@ -1,0 +1,43 @@
+.icon-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.logo-image{
+    height: 150px;
+    width: 150px;
+}
+
+
+img{
+    margin:5px
+}
+
+.icon:hover{
+    background-color: #d3dde0;
+    cursor: pointer;
+}
+
+.logo-label{
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.icon{
+    margin: 25px;
+    height:220px;
+    width: 200px;
+    font-size: 15px;
+}
+
+
