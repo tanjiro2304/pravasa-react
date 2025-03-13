@@ -7,9 +7,9 @@ export default function TransportUndertakingPage(){
 
     const logoItemsTop: LogoDetails[] = [
         {companyId :1, imageUrl: "/src/assets/logos/images.png", label: "Brihanmumbai Electric Supply And Transport" ,description:""},
-        {companyId :11, imageUrl: "/src/assets/logos/TMCU.webp", label: "Thane Municipal Transport" ,description:""},
-        {companyId :1, imageUrl: "/src/assets/logos/FXBKkfCF_400x400.jpg", label: "Navi Mumbai Municipal Transport" ,description:""},
-        {companyId :1, imageUrl: "/src/assets/logos/unnamed.png", label: "Mira-Bhayandar Municipal Transport" ,description:""}
+        {companyId :2, imageUrl: "/src/assets/logos/TMCU.webp", label: "Thane Municipal Transport" ,description:""},
+        {companyId :3, imageUrl: "/src/assets/logos/FXBKkfCF_400x400.jpg", label: "Navi Mumbai Municipal Transport" ,description:""},
+        {companyId :4, imageUrl: "/src/assets/logos/unnamed.png", label: "Mira-Bhayandar Municipal Transport" ,description:""}
     ];
 
     const logoItemsBottom: LogoDetails[] = [

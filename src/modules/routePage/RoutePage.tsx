@@ -1,6 +1,6 @@
 import {Button, Form} from "react-bootstrap";
 import {useEffect, useState} from "react";
-import routeService from "../../service/RouteService.tsx";
+import routeService, {getBestRoutes, getMbmtRoutes, getNmmtRoutes, getTmtRoutes} from "../../service/RouteService.tsx";
 import RouteFilter from "../../models/RouteFilter.tsx";
 import RouteDto from "../../models/RouteDto.tsx";
 import '../routePage/routePage.css';
@@ -22,18 +22,27 @@ export default function RoutePage  (){
     console.log(companyId);
     useEffect(() =>{
         const fetchRoutes = async () =>{
-            const filter = new RouteFilter();
-            filter.companyId = companyId;
-
-            const response =  routeService.findRoutesByCompanyId(filter);
-            response.then((response) => {
-                console.log('Data For Best :', response.data);
-                if (Array.isArray(response.data)) {
-                    setRoutes(response.data);
-                } else {
-                    setRoutes([response.data]);
-                }
-            });
+            // const filter = new RouteFilter();
+            // filter.companyId = companyId;
+            //
+            // const response =  routeService.findRoutesByCompanyId(filter);
+            // response.then((response) => {
+            //     console.log('Data For Best :', response.data);
+            //     if (Array.isArray(response.data)) {
+            //         setRoutes(response.data);
+            //     } else {
+            //         setRoutes([response.data]);
+            //     }
+            // });
+            if(companyId == 1){
+                setRoutes(getBestRoutes())
+            }else if(companyId == 2){
+                setRoutes(getTmtRoutes());
+            }else if(companyId == 3){
+                setRoutes(getNmmtRoutes());
+            }else if(companyId == 4){
+                setRoutes(getMbmtRoutes);
+            }
         }
 
         fetchRoutes();
