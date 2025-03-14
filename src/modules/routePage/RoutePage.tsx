@@ -1,6 +1,6 @@
 import {Button, Form} from "react-bootstrap";
 import {useEffect, useState} from "react";
-import routeService, {getBestRoutes, getMbmtRoutes, getNmmtRoutes, getTmtRoutes} from "../../service/RouteService.tsx";
+import  {getBestRoutes, getMbmtRoutes, getNmmtRoutes, getTmtRoutes} from "../../service/RouteService.tsx";
 import RouteFilter from "../../models/RouteFilter.tsx";
 import RouteDto from "../../models/RouteDto.tsx";
 import '../routePage/routePage.css';
